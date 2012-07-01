@@ -1,0 +1,68 @@
+Scoreboard
+----------
+Date (\DateTime)
+Games (Game[])
+
+
+Game
+-----
+Date (\DateTime)
+HomeTeam (Team)
+AwayTeam (Team)
+Boxscore  (Boxscore)
+
+
+
+Boxscore
+--------
+Innings (Inning[])
+WinningPitcher (Player)
+LosingPitcher (Player)
+SavingPitcher (Player)
+RunsHome (dynamic)
+RunsAway (dynamic)
+HitsHome (dynamic)
+HitsAway (dynamic)
+ErrorsHome (dynamic)
+ErrorsAway (dynamic)
+
+Inning
+------
+number (int)
+runsHome (int)
+runsAway (int)
+hitsAway (int)
+hitsHome (int)
+errorsAway (int)
+errorsHome (int)
+
+Team
+----
+Roster (Player[])
+Wins
+Losses
+HomeStadium (Stadium)
+
+Player
+------
+Firstname (string)
+Lastname (string)
+Positions (int[])
+dob (\DateTime)
+height (float)
+weight (float)
+bats (char)
+type (int)
+throws (char)
+team (Team)
+statistics (Statistics)
+
+
+Statistics
+----------
+StatType (Game, Season, Career)
+Walks
+Hits
+etc..
+
+
